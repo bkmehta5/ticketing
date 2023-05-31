@@ -5,7 +5,7 @@ WORKDIR /usr/app
 
 # Download an install a dependency
 COPY ./package.json  ./
-RUN npm install
+RUN npm install --omit=dev
 COPY ./ ./
 
 #Tell the image wgat to do it start 
